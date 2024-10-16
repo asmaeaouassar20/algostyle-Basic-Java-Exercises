@@ -2,8 +2,20 @@ package org.example.exercise1;
 
 public class Solution {
 
+    /**
+     * Comprsse une chaîne en supprimant les espaces
+     * superflus et en convertissant tous les caractères en miniscules
+     *
+     * @param str
+     * @return nouvelle string
+     */
     public String compresser(String str){
         String[] splittedString=str.trim().split("\\s+");
+                        // Le "\\" est nécessaire en Java pour échaper le caractère "\"
+                        // "\" est un caractère d'échappement
+                        // "\s" représente un caractère d'espace blanc (espace, tabulation saut de ligne)
+                        // le symbole "+" indique "un ou plusieur" de l'élément qui le précède
+                        // "\\s+" signifie "un ou plusieurs espaces blancs"
         str="";
         for(String s:splittedString)
             str+=s;
@@ -11,7 +23,7 @@ public class Solution {
     }
 
     public String inversion1(String str){
-        String result=new String();
+        String result= "";
         for(int i=str.length()-1;i>+0;i--){
             result+=str.charAt(i);
         }

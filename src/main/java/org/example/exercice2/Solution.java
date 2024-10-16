@@ -8,7 +8,14 @@ public class Solution {
 
     public boolean dateEstValide(String date){
         if(date.length()>8 || date.length()<5) return false;
-        String[] splittedDate=date.split("/");
+        String[] splittedDate=date.split("[/:.-]");
+                    // - La méthode String.split() en Java admet en paramètre
+                    // une Expression Régulière (regex) pour définir les délimiteurs
+
+                    // [/:.-]  :  -> Cette notation crée une classe de caractères
+                    //            -> tout caractère à l'intérieur des [] sera considérér
+                    //               comme délimiteur
+
         if(splittedDate.length<3) return false;
         for(String s:splittedDate){
             if(!isInteger(s)) return false;
