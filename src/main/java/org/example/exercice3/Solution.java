@@ -2,13 +2,13 @@ package org.example.exercice3;
 
 public class Solution {
 
-    public void IncTab(int[] tableau){
+    public void incTab(int[] tableau){
         for(int i=0;i<tableau.length;i++)
             tableau[i]+=1;
     }
 
 
-    public int[] IncNewTab(int[] tableau){
+    public int[] incNewTab(int[] tableau){
         int taille=tableau.length;
         int[] nouveauTableau=new int[taille];
         for(int i=0;i<taille;i++){

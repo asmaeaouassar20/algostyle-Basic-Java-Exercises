@@ -1,4 +1,4 @@
-package src.Test;
+package src.Test.org.example.exercice1;
 
 import org.example.exercice1.Solution;
 import org.junit.jupiter.api.DisplayName;

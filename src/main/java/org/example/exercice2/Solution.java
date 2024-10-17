@@ -26,7 +26,7 @@ public class Solution {
 
     public String convertDate(String date){
         if(dateEstValide(date)){
-            String[] splittedDate=date.split("/");
+            String[] splittedDate=date.split("[/.:-]");
 
             Map<Integer,String> joursDeSemaine=new HashMap<>();
             joursDeSemaine.put(1,"lundi");
@@ -37,7 +37,9 @@ public class Solution {
             joursDeSemaine.put(6,"samedi");
             joursDeSemaine.put(7,"dimanche");
 
-            String jourDeSemaine=joursDeSemaine.get(splittedDate[0]);
+
+            String jourDeSemaine=joursDeSemaine.get(Integer.parseInt(splittedDate[0]));
+
             if(jourDeSemaine==null){
                 return "le jour de la semaine doit etre compris entre 1 et 7";
             }
