@@ -1,4 +1,4 @@
-package org.example.exercise1;
+package org.example.exercice1;
 
 public class Solution {
 
@@ -24,7 +24,7 @@ public class Solution {
 
     public String inversion1(String str){
         String result= "";
-        for(int i=str.length()-1;i>+0;i--){
+        for(int i=str.length()-1;i>=0;i--){
             result+=str.charAt(i);
         }
         return result;
