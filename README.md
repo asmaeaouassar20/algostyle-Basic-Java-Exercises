@@ -4,7 +4,7 @@ Bienvenue dans ce repository !
 Ce projet contient un semble d'exercices en Java pour t'aider à améliorer tes compétences en programmation.
 
 
-## ------------------------ Exercice 1 ------------------------
+### ------------------------ Exercice 1 ------------------------
 Une phrase est dite palindrome si en éliminant les blancs entre les mots elle représente la même lecture dans les deux sens :
 
 Exemple :
@@ -18,13 +18,13 @@ Ecrire les méthodes **compresser** et **Inverser**, il est demandé d’écrire
 - La deuxième version de la méthode **Inverser** modifiera les positions des caractères ayant des positions symétriques dans la chaîne avec une boucle for à deux indices et en utilisant un tableau de char
 
 
-## ------------------------ Exercice 2 ------------------------
+### ------------------------ Exercice 2 ------------------------
 construire un programme permettant lorsqu’on lui fournit une date sous la forme numérique (3/2/5 où 3 indique le n° du jour de la semaine lundi=1, dimanche=7 ; le deuxième chiffre 2 indique le jour, enfin le troisième chiffre 5 indique le n° du mois)  le convertit en clair
 
 Exemple : 3/2/5 est convertit en : mercredi 2 mai
 
 
-## ------------------------ Exercice 3 ------------------------
+### ------------------------ Exercice 3 ------------------------
 Le but de cet exercice est d’écrire 3 méthodes pour incrémenter un même tableau, en jouant sur différentes formes de paramétrage
 
 Vous déclarez les 3 méthodes de classe (statiques) afin de pouvoir les utiliser directement dans la méthode principale, comme s’il s’agissait de simples fonctions
